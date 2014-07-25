@@ -17,7 +17,8 @@
 RED.palette = function() {
 
     var exclusion = ['config','unknown','deprecated'];
-    var core = ['input', 'output', 'function', 'social', 'storage', 'analysis', 'advanced'];
+   // var core = ['input', 'output', 'function', 'social', 'storage', 'analysis', 'advanced'];
+    var core = ['apps', 'storage'];
     
     function createCategoryContainer(category){
 
@@ -30,6 +31,14 @@ RED.palette = function() {
               <div id="palette-'+category+'-function"></div>\
             </div>\
             </div>');
+    	
+   /* 	 $("#palette-container").append('\
+    	            <div class="palette-category">\
+    	            <div id="header-'+category+'" class="palette-header"><i class="expanded icon-chevron-down"></i><span>'+category+'</span></div>\
+    	            <div class="palette-content" id="palette-base-category-'+category+'">\
+    	              <div id="palette-'+category+'"></div>\    	             
+    	            </div>\
+    	            </div>');*/
           
     }
     
@@ -48,14 +57,14 @@ RED.palette = function() {
           
           d.innerHTML = '<div class="palette_label">'+label+"</div>";
           d.className="palette_node";
-          if (def.icon) {
+        /*  if (def.icon) {
               d.style.backgroundImage = "url(icons/"+def.icon+")";
               if (def.align == "right") {
                   d.style.backgroundPosition = "95% 50%";
               } else if (def.inputs > 0) {
                   d.style.backgroundPosition = "10% 50%";
               }
-          }
+          }*/
           
           d.style.backgroundColor = def.color;
           

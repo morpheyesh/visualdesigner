@@ -26,7 +26,7 @@ RED.sidebar = function() {
             $("#"+tab.id).remove();
         }
     });
-    function addTab(title,content,closeable) {
+    function addTab(title,content,closeable) {    
         $("#sidebar-content").append(content);
         $(content).hide();
         sidebar_tabs.addTab({id:"tab-"+title,label:title,closeable:closeable});
