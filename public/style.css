@@ -59,7 +59,7 @@ a.brand:hover {
     color: #bbb !important;
 }
 a.brand img {
-    height: 16px;
+    height: 26px;
 }
 
 .navbar-fixed-top {
@@ -709,6 +709,9 @@ div.node-info {
 #workspace-tabs {
     margin-right: 28px;
 }
+
+
+
 #workspace-add-tab {
     position: absolute;
     top: 0;

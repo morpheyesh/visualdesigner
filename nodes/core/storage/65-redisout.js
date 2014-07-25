@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
-
+/*
 module.exports = function(RED) {
     "use strict";
     var util = require("util");
@@ -106,4 +106,4 @@ module.exports = function(RED) {
         });
     }
     RED.nodes.registerType("redis out",RedisOutNode);
-}
+}*/
